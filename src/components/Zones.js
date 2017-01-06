@@ -3,12 +3,24 @@ import Zone from './Zone'
 
 
 class Zones extends React.Component{
+	constructor(){
+		super()
+		this.state = {
+			list: [
+				{name:'Zone 1', zipCode: '60153', numComments:14},
+				{name:'Zone 2', zipCode: '60551', numComments:33},
+				{name:'Zone 3', zipCode: '60621', numComments:150},
+				{name:'Zone 4', zipCode: '60458', numComments:51}
+			]
+		}
+	}
+
 	render(){
 
-		const firstZone = {name:'Zone 1', zipCode: '60153', numComments:14}
-		const secondZone = {name:'Zone 2', zipCode: '60551', numComments:33}
-		const thirdZone = {name:'Zone 3', zipCode: '60621', numComments:150}
-		const fourthZone = {name:'Zone 4', zipCode: '60458', numComments:51}
+		// const firstZone = {name:'Zone 1', zipCode: '60153', numComments:14}
+		// const secondZone = {name:'Zone 2', zipCode: '60551', numComments:33}
+		// const thirdZone = {name:'Zone 3', zipCode: '60621', numComments:150}
+		// const fourthZone = {name:'Zone 4', zipCode: '60458', numComments:51}
 
 		return(
 			<div className="Zones container">
