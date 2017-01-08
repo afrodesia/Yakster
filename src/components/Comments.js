@@ -3,8 +3,25 @@ import Comment from './Comment'
 
 
 class Comments extends Component{
-
+    constructor(){
+        super()
+        this.state = {
+            list : [
+                { body: 'Thank you!! ', username: 'Ken', time: '4hrs ago'},
+                { body: 'Ya Ya', username: 'Mika', time: '3hrs ago'},
+                { body: 'I love you Ken !! ', username: 'Haeri', time: '2hrs ago'},
+                { body: 'Wow who are you and what do you do?? ', username: 'Moo', time: '2min ago'},
+                { body: 'Go Away ', username: 'M', time: '1min ago'}
+            ]
+        }
+    }
 	render(){
+
+        const commentList = this.state.list.map((comment, i) => {
+            return (
+                <li className="left clearfix"><Comment currentComment={comment}/></li>
+            )
+        })
 		return(
 			<div className="Comments chat">
                 <div className="" id="accordion">
@@ -12,10 +29,7 @@ class Comments extends Component{
                 </div>
                 <div className="panel-body">
                     <ul> 
-                        <li className="left clearfix"><Comment /></li>
-                        <li className="left clearfix"><Comment /></li>
-                        <li className="left clearfix"><Comment /></li>
-                        <li className="left clearfix"><Comment /></li>
+                      {commentList}
                     </ul>
                 </div>
 			</div>

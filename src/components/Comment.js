@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
-// import Zones from './Zones'
 
 
 class Comment extends Component{
 
+    
 	render(){
 		return(
 			<div className="Comment">
@@ -12,10 +12,10 @@ class Comment extends Component{
                 </span>
                     <div className="chat-body clearfix">
                         <div className="header">
-                            <strong className="primary-font">John Doe</strong> 
-                            <small className="text-muted">32 mins ago</small>
+                            <strong className="primary-font">{this.props.currentComment.username}</strong> 
+                            <small className="text-muted">{this.props.currentComment.time}</small>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ante turpis, rutrum ut ullamcorper sed, dapibus ac nunc. Vivamus luctus convallis mauris, eu gravida tortor aliquam ultricies. </p> 
+                        <p>{this.props.currentComment.body}</p> 
                     </div>
 			</div>
             
