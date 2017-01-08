@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import Zones from './Zones'
-import Comments from './Comments'
+import Zones from './zones/Zones'
+import Comments from './comments/Comments'
 
 class Home extends Component{
 
@@ -17,7 +17,7 @@ class Home extends Component{
                     </div>
                 </div>
 			</div>
-            
+
 		)
 	}
 }
