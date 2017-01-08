@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  padding: 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: #baeafc;
   color:#122b58;
@@ -80,6 +80,9 @@ a {
 
 .chat-body small {
     margin-left: 5px;
+}
+.Home h1{
+    padding-bottom: 20px;
 }
 
 .Comment-form{
