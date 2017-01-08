@@ -1,8 +1,8 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: #3e96ff;
-  color:#fff;
+  background: #baeafc;
+  color:#122b58;
 }
 
 a {
@@ -44,7 +44,7 @@ a {
     height: 66px;
     line-height: 45px;
 }
-    
+
 /*Chat Widget*/
 
 .chat ul {
@@ -82,3 +82,10 @@ a {
     margin-left: 5px;
 }
 
+.Comment-form{
+    background: #3AB7F9;
+    padding: 15px;
+}
+.cmt-btn{
+    display: block;
+}

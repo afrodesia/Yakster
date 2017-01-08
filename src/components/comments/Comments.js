@@ -30,8 +30,24 @@ class Comments extends Component{
                 <div className="panel-body">
                     <ul>
                       {commentList}
+
+
+
                     </ul>
+
+
                 </div>
+                <section className="Comment-form">
+                 <div className="form-group">
+                   <label>Username</label>
+                   <input type="text" className="form-control" id="usr"/>
+                 </div>
+                 <div className="form-group">
+                   <label for="pwd">Enter your Comment</label>
+                   <textarea type="text" className="form-control"></textarea>
+                 </div>
+                 <button className="btn btn-default cmt-btn">Enter your Comment</button>
+                 </section>
 			</div>
 
 		)
