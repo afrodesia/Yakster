@@ -19,17 +19,17 @@ class Zones extends Component{
 
 	render(){
 
-		
+
 		const listItems = this.state.list.map((zone, i) => {
 			return(
-				<li key={zone.props}><Zone currentZone={zone} /></li>
+				<li key={zone.key}><Zone currentZone={zone} /></li>
 			)
 		})
 
 		return(
 			<div className="Zones">
 				<h2>Zones</h2>
-				
+
 				<ol>
 				  	{ listItems }
 				</ol>

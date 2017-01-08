@@ -19,7 +19,7 @@ class Comments extends Component{
 
         const commentList = this.state.list.map((comment, i) => {
             return (
-                <li className="left clearfix"><Comment currentComment={comment}/></li>
+                <li className="left clearfix"><Comment key={comment.key} currentComment={comment}/></li>
             )
         })
 		return(
@@ -28,12 +28,12 @@ class Comments extends Component{
                    <h2>Comments Zone Header</h2>
                 </div>
                 <div className="panel-body">
-                    <ul> 
+                    <ul>
                       {commentList}
                     </ul>
                 </div>
 			</div>
-            
+
 		)
 	}
 }
