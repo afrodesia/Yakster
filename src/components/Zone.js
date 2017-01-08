@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {Component} from 'react'
 
-class Zone extends React.Component{
+class Zone extends Component{
 	render(){
 		return(
 			<div className="Zone panel panel-info">		

@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {Component} from 'react'
 import Zone from './Zone'
 
 
-class Zones extends React.Component{
+
+class Zones extends Component{
 	constructor(){
 		super()
 		this.state = {
@@ -26,7 +27,7 @@ class Zones extends React.Component{
 		})
 
 		return(
-			<div className="Zones container">
+			<div className="Zones">
 				<h2>Zones</h2>
 				
 				<ol>
