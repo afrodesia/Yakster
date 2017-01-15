@@ -8,7 +8,8 @@ class Comments extends Component{
         this.state = {
             comment : {
                 username: '',
-                body: ''
+                body: '',
+                timestamp: ''
             },
             list : [
                 { body: 'Thank you!! ', username: 'Ken', time: '4hrs ago'}
@@ -39,6 +40,15 @@ class Comments extends Component{
             comment: updateComment
         })
 
+    }
+    timeStamp(){
+        console.log('timeStamp : ' + event.target.value)
+
+        let updateComment = Object.assign({}, this.state.comment)
+        updateComment['timestamp'] = event.target.value
+        this.setState({
+            comment: updateComment
+        })
     }
 
     submitComment(){
@@ -84,6 +94,13 @@ class Comments extends Component{
                    <input onChange={this.updateBody.bind(this)}
                        type="text"
                        className="form-control" id="comment" />
+
+                 </div>
+                 <div className="form-group">
+                   <label>Timestamp</label>
+                   <input onChange={this.timeStamp.bind(this)}
+                       type="text"
+                       className="form-control" id="timeStamp" />
 
                  </div>
                  <button onClick={this.submitComment.bind(this)}

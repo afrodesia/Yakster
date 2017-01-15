@@ -3,7 +3,7 @@ import React, {Component} from 'react'
 
 class Comment extends Component{
 
-    
+
 	render(){
 		return(
 			<div className="Comment">
@@ -12,13 +12,13 @@ class Comment extends Component{
                 </span>
                     <div className="chat-body clearfix">
                         <div className="header">
-                            <strong className="primary-font">{this.props.currentComment.username}</strong> 
-                            <small className="text-muted">{this.props.currentComment.time}</small>
+                            <strong className="primary-font">{this.props.currentComment.username}</strong>
+                            <small className="text-muted">{this.props.currentComment.timestamp}</small>
                         </div>
-                        <p>{this.props.currentComment.body}</p> 
+                        <p>{this.props.currentComment.body}</p>
                     </div>
 			</div>
-            
+
 		)
 	}
 }
