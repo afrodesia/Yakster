@@ -92,3 +92,17 @@ a {
 .cmt-btn{
     display: block;
 }
+.AddZone-form h3{
+    margin-top: 0px;
+    color:#5f6468;
+    font-size: 16px;
+}
+.AddZone-form{
+    margin-left: 40px;
+    background-color: #fff;
+    padding: 15px;
+}
+.AddZone-form input{
+    margin-bottom: 15px;
+}
+
