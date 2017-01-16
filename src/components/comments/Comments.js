@@ -27,16 +27,6 @@ class Comments extends Component{
             comment: updateComment
         })
     }
-    updateTimestamp(event){
-
-        // console.log('updated username : ' + event.target.value)
-
-        let updateComment = Object.assign({}, this.state.comment)
-        updateComment['timestamp'] = event.target.value
-        this.setState({
-            comment: updateComment
-        })
-    }
     updateBody(event){
         console.log('updated comment : ' + event.target.value)
 

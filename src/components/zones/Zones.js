@@ -16,6 +16,9 @@ class Zones extends Component{
 			]
 		}
 	}
+	updateZone(event){
+		console.log('Update zone')
+	}
 
 	render(){
 	
@@ -33,6 +36,12 @@ class Zones extends Component{
 				<ol>
 				  	{ listItems }
 				</ol>
+
+				
+			      <input onChange={this.updateZone.bind(this)} type="text" className="form-control" placeholder="Name" />
+			      <input onChange={this.updateZone.bind(this)} type="text" className="form-control" placeholder="Zipcode" />
+			      <button className="btn btn-danger" type="submit">Enter</button>
+
 			</div>
 		)
 	}
