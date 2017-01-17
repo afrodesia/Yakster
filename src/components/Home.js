@@ -7,7 +7,7 @@ class Home extends Component{
 	render(){
 		return(
 			<div className="Home">
-				<h1>Yakster</h1>
+				<h1 className="logo">Yakster</h1>
                 <div className="row">
                     <div className="col-lg-4">
                         <Zones />
