@@ -5,12 +5,12 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-router.get('/createzone', function(req, res, next) {
-  res.render('createzone', { title: 'Express - Create Zone' });
+router.get('/create-zone', function(req, res, next) {
+  res.render('create-zone', { title: 'Express - Create Zone' });
 });
 
-router.get('/createcomment', function(req, res, next) {
-  res.render('createcomment', { title: 'Express - Create Comment' });
+router.get('/create-comment', function(req, res, next) {
+  res.render('create-comment', { title: 'Express - Create Comment' });
 });
 
 module.exports = router;

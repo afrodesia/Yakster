@@ -12,7 +12,7 @@ class Comments extends Component{
                 timestamp: ''
             },
             list : [
-                { body: 'Thank you!! ', username: 'Ken', time: '4hrs ago'}
+                // { body: 'Thank you!! ', username: 'Ken', time: '4hrs ago'}
             ]
         }
     }
@@ -71,9 +71,10 @@ class Comments extends Component{
 
                 </div>
                 <div className="panel-body">
-                    <ul>
-                      {commentList}
 
+                    <ul>
+                    <h2>Add Comment</h2>
+                      {commentList}
                     </ul>
 
 

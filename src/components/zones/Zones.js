@@ -13,10 +13,6 @@ class Zones extends Component{
 			},
 			list : [
 				// { name:'Zone 1', zipCode: '60153', numComments:14 },
-				// { name:'Zone 2', zipCode: '60551', numComments:33 },
-				// { name:'Zone 3', zipCode: '60621', numComments:150 },
-				// { name:'Zone 4', zipCode: '60458', numComments:51 },
-				// { name:'Zone 5', zipCode: '60658', numComments:41 }
 			]
 		}
 	}
@@ -46,9 +42,9 @@ class Zones extends Component{
 
 		return(
 			<div className="Zones">
-				<ol>
+				<ul>
 				  	{ listItems }
-				</ol>
+				</ul>
 				<div className="AddZone-form">
 				<h3>Add Zone</h3>
 			      <input id="name" onChange={this.updateZone.bind(this)} type="text" className="form-control" placeholder="Name" />

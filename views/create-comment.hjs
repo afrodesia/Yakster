@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+
+    <!-- Custom Bootstrap reseting IPAD Portrait view -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style type="text/css">
+      .comment{
+        width: 100%;
+      }
+      .comment textarea,
+      .comment input{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      .comment textarea{
+        min-height: 200px;
+      }
+    </style>
+
+  </head>
+  <body class="container">
+
+
+    <h1>Create Comment</h1>
+
+    <form action="/api/comment" method="post" class="comment">
+    	<input class="form-control" type="text" name="username" placeholder="UserName" />
+    	<textarea class="form-control" type="text" name="body"> 
+      </textarea>
+      <input class="btn btn-primary" type="submit" value="Create Comment" />
+    </form>
+  </body>
+</html>

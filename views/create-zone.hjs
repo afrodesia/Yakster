@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+      <!-- Custom Bootstrap reseting IPAD Portrait view -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+        <style type="text/css">
+      .zone{
+        width: 100%;
+      }
+      .zone textarea,
+      .zone input{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      .zone textarea{
+        min-height: 200px;
+      }
+    </style>
+  </head>
+  <body class="container">
+
+
+    
+
+    <h1>Create Zone</h1>
+
+    <form action="/api/zone" method="post" class="zone">
+    	<input class="form-control" type="text" name="name" placeholder="Name" />
+    	<input class="form-control" type="text" name="zipCodes" placeholder="Zip Codes" />
+    	<input class="btn btn-primary" type="submit" value="Create Zone" />
+    </form>
+  </body>
+</html>
