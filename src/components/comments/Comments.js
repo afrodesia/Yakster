@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Comment from './Comment'
-
+import superagent from 'superagent'
 
 class Comments extends Component{
     constructor(){
@@ -15,6 +15,27 @@ class Comments extends Component{
                 // { body: 'Thank you!! ', username: 'Ken', time: '4hrs ago'}
             ]
         }
+    }
+    componentDidMount() {
+        console.log('componentDidMount')
+
+        superagent
+        .get('api/comment')
+        .query(null)
+        .set('Accept', 'application/json')
+        .end((err,response) => {
+            if(err){
+                console.log('ERROR' + err)
+                return
+            }
+            console.log(JSON.stringify(response.body))
+            let results = response.body.results
+
+            this.setState({
+                list: results
+            })
+        })
+
     }
 
     updateUserName(event){

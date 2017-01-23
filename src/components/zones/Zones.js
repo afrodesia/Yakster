@@ -44,6 +44,7 @@ class Zones extends Component{
 		updatedZone[event.target.id] = event.target.value
 		this.setState({
 			zone: updatedZone
+	
 		})
 	}
 	addZone(){
