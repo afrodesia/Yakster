@@ -11,9 +11,7 @@ class Comments extends Component{
                 body: '',
                 timestamp: ''
             },
-            list : [
-                // { body: 'Thank you!! ', username: 'Ken', time: '4hrs ago'}
-            ]
+            list : []
         }
     }
     componentDidMount() {

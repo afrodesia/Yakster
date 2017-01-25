@@ -12,9 +12,7 @@ class Zones extends Component{
 				name: '',
 				zipCode: ''
 			},
-			list : [
-				// { name:'Zone 1', zipCode: '60153', numComments:14 },
-			]
+			list : []
 		}
 	}
 	componentDidMount() {
