@@ -2,7 +2,8 @@ import React, {Component} from 'react'
 
 class Zone extends Component{
 	render(){
-		const zipCode = this.props.currentZone.zipCodes[0]
+		const zipCode = this.props.currentZone.zipCodes[1]
+
 		return(
 			<div className="Zone panel panel-info">		
 				<div className="panel-heading">

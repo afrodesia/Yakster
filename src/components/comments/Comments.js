@@ -35,7 +35,6 @@ class Comments extends Component{
         })
 
     }
-
     updateUserName(event){
 
         console.log('updated username : ' + event.target.value)
@@ -115,7 +114,7 @@ class Comments extends Component{
                  <div className="form-group">
                    <label>Timestamp</label>
                    <input onChange={this.updateTimestamp.bind(this)}
-                       type="text"
+                       type="time"
                        className="form-control" id="timeStamp" />
 
                  </div>

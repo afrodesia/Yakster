@@ -1,6 +1,6 @@
-var mongoose = require('mongoose')
+const mongoose = require('mongoose')
 
-var CommentSchema = new mongoose.Schema({
+const CommentSchema = new mongoose.Schema({
 	username:{type:String, default:''},
 	body:{type:String,defaut:''},
 	timestamp:{type:Date, default:Date.now}

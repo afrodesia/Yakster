@@ -1,4 +1,4 @@
-var Zone = require('../models/Zone')
+const Zone = require('../models/Zone')
 
 module.exports = {
 
@@ -21,9 +21,9 @@ module.exports = {
 		})
 	},
 	create: function(params,callback){
-		var zips = params['zipCodes']
-		var zip = zips.split(',')
-		var newZips = []
+		const zips = params['zipCodes']
+		const zip = zips.split(',')
+		const newZips = []
 		zip.forEach(function(zipCode){
 			newZips.push(zipCode.trim())
 		})

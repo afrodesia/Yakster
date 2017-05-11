@@ -1,14 +1,14 @@
-var express = require('express')
-var router = express.Router()
-// var ZoneController = require('../controllers/ZoneController')
-var controllers = require('../controllers')
+const express = require('express')
+const router = express.Router()
+// const ZoneController = require('../controllers/ZoneController')
+const controllers = require('../controllers')
 
 // Main Resource payload
 
 router.get('/:resource', function(req, res, next){
 
-	var resource = req.params.resource
-	var controller = controllers[resource]
+	const resource = req.params.resource
+	const controller = controllers[resource]
 
 	if(controller == null){
 		res.json({
@@ -37,10 +37,10 @@ router.get('/:resource', function(req, res, next){
 
 router.get('/:resource/:id', function(req, res, next){
 
-	var resource = req.params.resource
-	var id = req.params.id
+	const resource = req.params.resource
+	const id = req.params.id
 
-	var controller = controllers[resource]
+	const controller = controllers[resource]
 
 	if(controller == null){
 		res.json({
@@ -67,8 +67,8 @@ router.get('/:resource/:id', function(req, res, next){
 // Create method for payload
 
 router.post('/:resource', function(req, res, next){
-	var resource = req.params.resource
-	var controller = controllers[resource]
+	const resource = req.params.resource
+	const controller = controllers[resource]
 
 	if(controller == null){
 		res.json({

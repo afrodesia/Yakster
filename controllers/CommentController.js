@@ -1,4 +1,4 @@
-var Comment = require('../models/Comment')
+const Comment = require('../models/Comment')
 
 module.exports = {
 
